@@ -1,7 +1,9 @@
-
+type GreetProps = {
+  name: string;
+}
 // functional components
-export default function Greet(){
-    return <h1>Hello</h1>
+export default function Greet(props: GreetProps) {
+    return <h1>Hello {props.name}</h1>
 }
 
 
